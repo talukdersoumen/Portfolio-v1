@@ -1,0 +1,90 @@
+div.header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.header-leftpanel {
+    cursor: pointer;
+}
+
+ul.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+ul.nav li {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+ul.nav li:hover {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+
+div.home-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.home-body-leftpanel {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+div.picture-center-right {
+    height: 400px;
+    width: 330px;
+    border-radius: 50%;
+    border: 10px double gray;
+    z-index: 1;
+    overflow: hidden;
+    animation: move-image 1s ease-out;
+}
+
+@keyframes move-image {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+li.email span,
+li.resume span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+li.email:hover,
+li.resume:hover {
+    border-bottom: 2px solid black;
+}
+
+li.github a,
+li.linkedin a,
+li.whatsapp a,
+li.instagram a {
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+li.github a:hover,
+li.linkedin a:hover,
+li.whatsapp a:hover,
+li.instagram a:hover {
+    transform: rotate3d(0, 1, 0, 90deg);
+}

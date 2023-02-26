@@ -1,0 +1,136 @@
+::before,
+::after,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+* {
+    background-image: url("/img/bgim.jpg");
+    background-size: cover;
+}
+
+#home,
+#about,
+#education,
+#skills,
+#contact {
+    height: 100vh;
+    padding: 20px 40px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav li {
+    margin: 0 20px;
+}
+
+.nav a {
+    display: block;
+    transition: none;
+    font-size: 1.2rem;
+}
+
+ul.socials-buttons,
+ul.mail-cv-big-button {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+div.intro-text-left h3,
+div.intro-text-left h1,
+div.intro-text-left h2,
+div.intro-text-left p {
+    margin-bottom: 20px;
+}
+
+ul.socials-buttons a,
+ul.mail-cv-big-button a {
+    display: flex;
+    align-items: center;
+}
+
+ul.socials-buttons li,
+ul.mail-cv-big-button li {
+    margin-right: 30px;
+    margin-bottom: 35px;
+}
+
+
+.chevron-up-button {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(210, 241, 71, 0.603);
+    border: 1px ridge white;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.chevron-up-button:hover {
+    background-color: antiquewhite;
+}
+
+div,
+li,
+ul,
+span,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+img {
+    background: none;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.medium-bold {
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+.extra-bold {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}

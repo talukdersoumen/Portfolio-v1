@@ -1,0 +1,112 @@
+div.edu-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+div.edu-slider-container {
+    margin-top: 10px;
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+div.edu-sideBar-button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-bottom: 10px ridge black;
+}
+
+div.sideBar:hover {
+    background-color: rgba(221, 21, 21, 0.90);
+}
+
+.sideBar {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 0 5px;
+    background-color: rgba(221, 21, 21, 0.70);
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+div.edu-slider {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.edu-slide {
+    display: flex;
+    gap: 10px;
+}
+
+div.edu-slide-leftpanel {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 20px;
+    padding: 20px 20px 10px 20px;
+}
+
+/* div.edu-slide-leftpanel-text {
+    margin: 25px 0;
+} */
+
+div.edu-slide-leftpanel-image-top {
+    border-bottom: 10px ridge black;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+div.edu-slide-leftpanel-image-top img {
+    height: 100px;
+    width: 160px;
+}
+
+div.edu-slide-rightpanel {
+    height: 100%;
+    width: 70%;
+    background-color: rgba(39, 39, 241, 0.26);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.edu-slide-rightpanel-text {
+    margin: 25px 0;
+}
+
+.edu-slide:not(.current) {
+    display: none;
+}
+
+.edu-slide {
+    opacity: 0;
+}
+
+.current {
+    opacity: 1;
+}

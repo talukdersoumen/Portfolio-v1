@@ -1,0 +1,70 @@
+#contact {
+    margin: 0;
+    padding: 0;
+}
+
+div.contact-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-body-topSection {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-body-topSection span {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: #9f6868 5px 3px 7px;
+}
+
+div.contact-body-subheading {
+    width: 40%;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+div.contact-body-hello {
+    font-size: 1.2rem;
+    padding: 20px 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.192);
+    cursor: pointer;
+}
+
+div.contact-body-hello:hover {
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+div.contact-body-hello a:hover {
+    color: rgb(255, 208, 0);
+}
+
+div.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.178);
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    font-size: 1.2rem;
+    padding-top: 40px;
+}
+
+.footer span:hover {
+    text-shadow: #FC0 1px 0 10px;
+    cursor: pointer;
+}
